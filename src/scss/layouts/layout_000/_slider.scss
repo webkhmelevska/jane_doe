@@ -1,0 +1,142 @@
+.slider {
+  position: relative;
+  height: 280px;
+  width: 100%;
+  background-color: cssvar(bgColor);
+  overflow: hidden;
+
+  @include e(slide) {
+    height: 100%;
+    position: relative;
+    width: 100%;
+  }
+
+  @include e(slide-1) {
+    color: cssvar(mainColor);
+  }
+
+  @include e(slide-2) {
+    color: cssvar(white);
+  }
+
+  @include e(slide-3) {
+    color: cssvar(white);
+  }
+}
+
+.slider-wrapper {
+  max-width: 940px;
+  width: 100%;
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  transform: translate(-50%);
+  padding-inline: 20px;
+
+  @include e(text) {
+    opacity: 0.9;
+    font-size: rem(14px);
+    font-weight: 400;
+    padding-block: 5px;
+    max-width: 180px;
+  }
+
+  @include e(title) {
+    opacity: 0.9;
+    font-size: rem(24px);
+    line-height: 100%;
+    font-weight: 700;
+    max-width: 200px;
+    margin: 0;
+    padding-bottom: 5px;
+  }
+}
+
+.nav-for {
+  overflow: hidden;
+}
+
+.myarrow {
+  display: none;
+  position: absolute;
+  top: 52%;
+  margin-top: -32px;
+  width: 32px;
+  height: 35px;
+  z-index: 10;
+  transition: all 0.5s ease-in;
+  background: url(#{$i}right_arrow.svg) no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  text-indent: -9999px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.myarrow_prev {
+  left: -100px;
+  transform: rotate(180deg);
+}
+.myarrow_next {
+  right: -100px;
+}
+
+.slider:hover .myarrow_prev {
+  left: 100px;
+}
+.slider:hover .myarrow_next {
+  right: 100px;
+}
+
+.slider-box {
+  display: none;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container_dots {
+  display: none;
+}
+
+.dots-box {
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 60px;
+  transform: translate(-50%);
+  padding-left: 0;
+}
+
+.dots-box li {
+  border-radius: 100%;
+  border: 3px solid cssvar(navColor);
+}
+
+.dots-box button {
+  display: flex;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  width: 14px;
+  height: 14px;
+  color: cssvar(bgColor);
+  background-color: cssvar(bgColor);
+  cursor: pointer;
+}
+
+.dots-box button:focus {
+  outline: none;
+}
+
+.slick-active button {
+  background-color: cssvar(mainColor);
+  color: cssvar(mainColor);
+}

@@ -1,0 +1,14 @@
+.blockquote {
+  padding-block: 30px;
+  @include e(text) {
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-style: italic;
+  }
+  @include e(footer) {
+    color: cssvar(secondaryColor);
+    font-weight: 700;
+    text-align: center;
+  }
+}

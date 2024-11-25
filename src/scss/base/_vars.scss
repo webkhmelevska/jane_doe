@@ -1,0 +1,54 @@
+//fonts
+$google-font: "https://fonts.googleapis.com/css?family=Lato:300,400,500";
+$prefix: prefix- !default;
+$baseFontSize: 16px;
+$baseFontFamily: "Lato", sans-serif;
+$mediumFontWeight: 500;
+
+$mobilePadding: (12px / $baseFontSize) * 1rem;
+$desktopPadding: 1rem;
+
+// Paths
+
+$i: "../i/";
+$fontsPath: "../fonts/";
+$usersFilesPath: "../userfiles/";
+
+// Colors
+$black: #000000;
+$white: #ffffff;
+$blue: #0d6efd !default;
+$indigo: #6610f2 !default;
+$purple: #6f42c1 !default;
+$pink: #d63384 !default;
+$red: #dc3545 !default;
+$navColor: #222222;
+$mainColor: #333333;
+$secondaryColor: #37b048;
+$bgColor: #dddddd;
+$bgLight: #f6f4f0;
+$bgErr: #ffdede;
+$borderColor: #cccccc;
+$timeColor: #a0a0a0;
+$socialColor: #498cf0;
+
+$cssvars: (
+  "font-family": $baseFontFamily,
+  "font-size": $baseFontSize,
+  "black": $black,
+  "white": $white,
+  "blue": $blue,
+  "indigo": $indigo,
+  "purple": $purple,
+  "pink": $pink,
+  "red": $red,
+  "navColor": $navColor,
+  "mainColor": $mainColor,
+  "secondaryColor": $secondaryColor,
+  "bgColor": $bgColor,
+  "bgLight": $bgLight,
+  "bgErr": $bgErr,
+  "borderColor": $borderColor,
+  "timeColor": $timeColor,
+  "socialColor": $socialColor,
+) !default;

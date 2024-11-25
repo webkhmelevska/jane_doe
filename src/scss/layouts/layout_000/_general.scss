@@ -1,0 +1,67 @@
+html {
+  font-size: cssvar(font-size);
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: cssvar(font-family);
+  font-size: 1rem;
+  background-color: transparent;
+  color: #333;
+  line-height: 20px;
+  font-weight: 400;
+  margin: 0;
+  min-height: 100%;
+}
+
+label {
+  font-family: cssvar(font-family);
+}
+
+.container {
+  max-width: 980px;
+  padding-inline: 10px;
+  width: 100%;
+  margin-inline: auto;
+  padding-inline: cssvar(mobilePadding);
+}
+
+.scroll-top {
+  position: fixed;
+  bottom: -100px;
+  right: 20px;
+  z-index: 2;
+  display: block;
+  width: 46px;
+  height: 46px;
+  background-repeat: no-repeat;
+  background-image: url(#{$i}to-top.svg);
+  background-color: rgb(73, 140, 240);
+  transform: rotate(-90deg);
+  cursor: pointer;
+  background-position: 50% 50%;
+  border-radius: 50%;
+  outline: 0px;
+  transition: 0.4s;
+}
+
+.hr {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding-top: 0px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.form-control.is-invalid {
+  border-color: cssvar(red);
+}
+.form-control.is-invalid:focus {
+  box-shadow: 0 0 0 0.25rem rgba(220, 53, 69, 0.25);
+}
+
+.form-control.is-valid {
+  border-color: cssvar(secondaryColor);
+}
+.form-control.is-valid:focus {
+  box-shadow: 0 0 0 0.25rem rgba(25, 135, 84, 0.25);
+}

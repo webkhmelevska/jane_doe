@@ -1,0 +1,12 @@
+.header-box {
+  grid-template-columns: 1fr auto;
+}
+
+.logo {
+  padding-block: 10px;
+}
+
+.nav {
+  grid-area: nav;
+  margin-bottom: 0;
+}

@@ -1,0 +1,59 @@
+.header {
+  background-color: #f6f4f0;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.16);
+}
+
+.header-box {
+  display: grid;
+  row-gap: 0px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "top top"
+    "logo nav";
+
+  @include e(title) {
+    grid-area: logo;
+    margin-bottom: 0;
+  }
+}
+
+.logo {
+  grid-area: logo;
+  margin-bottom: 0;
+}
+
+.menu-button {
+  grid-area: nav;
+  margin-bottom: 0;
+  margin-right: 20px;
+  align-self: center;
+  justify-self: right;
+}
+
+.top-nav {
+  grid-area: top;
+  align-self: center;
+  justify-self: right;
+  margin-inline: 0px;
+  padding-block: 2px;
+  background-color: transparent;
+  opacity: 0.7;
+  text-align: right;
+  text-transform: uppercase;
+
+  @include e(link) {
+    margin-right: 0px;
+    margin-left: 20px;
+    color: cssvar(black);
+    font-size: rem(11px);
+    text-decoration: none;
+    text-transform: uppercase;
+    &:hover {
+      color: cssvar(secondaryColor);
+    }
+  }
+}
+
+.nav-box__link.active-link {
+  color: cssvar(secondaryColor);
+}

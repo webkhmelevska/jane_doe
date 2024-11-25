@@ -1,0 +1,36 @@
+.nav {
+  grid-area: nav;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-block: 10px;
+}
+.nav-box {
+  display: flex;
+  flex-grow: 1;
+  gap: 20px;
+  margin-bottom: 0;
+
+  @include e(item) {
+    margin-bottom: 0;
+    padding: 20px 10px;
+  }
+
+  @include e(link) {
+    color: cssvar(navColor);
+    font-size: rem(14px);
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    &:hover {
+      color: cssvar(secondaryColor);
+    }
+  }
+}
+
+.mobile-menu-container {
+  display: none !important;
+}
+.menu-button {
+  display: none;
+}

@@ -1,0 +1,64 @@
+.workshops {
+  padding-inline: 40px;
+  padding-top: 10px;
+  padding-bottom: 40px;
+  margin-bottom: 20px;
+  @include e(title) {
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding-inline: 10px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    font-weight: 300;
+    font-size: rem(24px);
+    color: cssvar(secondaryColor);
+  }
+
+  @include e(list) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.workshop {
+  //   flex-basis: 280px;
+  //   max-width: 500px;
+  padding-inline: 10px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  @include e(time) {
+    margin-bottom: 30px;
+    color: cssvar(timeColor);
+    font-size: rem(26px);
+    font-weight: 300;
+  }
+  @include e(location) {
+    font-size: rem(14px);
+    margin-bottom: 5px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  @include e(hr) {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding-top: 0px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  }
+  @include e(title) {
+    color: cssvar(secondaryColor);
+  }
+}
+
+.workshop-time {
+  display: flex;
+  align-items: center;
+  height: 20px;
+
+  @include e(icon) {
+    margin-right: 10px;
+    width: 13px;
+    height: 13px;
+  }
+  @include e(text) {
+  }
+}

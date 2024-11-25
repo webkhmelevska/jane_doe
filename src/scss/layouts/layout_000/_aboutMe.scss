@@ -1,0 +1,80 @@
+.about-me {
+  margin-left: -10px;
+  margin-right: -10px;
+  padding-inline: 20px;
+  margin-bottom: 30px;
+
+  @include e(title) {
+    color: cssvar(secondaryColor);
+    font-size: rem(32px);
+    font-weight: 300;
+    padding-inline: 20px;
+  }
+  @include e(block) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.about-me-img {
+  padding-inline: 10px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.about-box {
+  padding-inline: 10px;
+  @include e(title) {
+    margin: 5px 0 20px;
+    opacity: 0.8;
+    font-size: rem(22px);
+  }
+}
+
+.about-box h5,
+p {
+  font-size: rem(14px);
+  margin-bottom: 10px;
+}
+
+.about-box h5 {
+  line-height: 20px;
+}
+
+.achievements {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.numbers {
+  margin-bottom: 30px;
+  @include e(number) {
+    color: cssvar(secondaryColor);
+    font-size: rem(42px);
+    line-height: 33px;
+    padding-block: 15px;
+    text-align: center;
+  }
+  @include e(description) {
+    font-size: rem(14px);
+    text-align: center;
+    opacity: 0.7;
+  }
+}
+
+.ach-arrow {
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  @include e(text) {
+    font-size: rem(14px);
+    font-weight: 700;
+    color: cssvar(secondaryColor);
+    text-transform: uppercase;
+    margin-right: 15px;
+  }
+  @include e(img) {
+    max-width: 100%;
+  }
+}

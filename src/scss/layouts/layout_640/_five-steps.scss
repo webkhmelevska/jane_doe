@@ -1,0 +1,12 @@
+.five-steps {
+  padding-block: 30px;
+
+  @include e(title) {
+    padding-inline: 10px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    font-weight: 300;
+    font-size: rem(32px);
+    line-height: 36px;
+  }
+}

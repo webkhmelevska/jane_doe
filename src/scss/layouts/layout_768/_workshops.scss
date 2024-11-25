@@ -1,0 +1,9 @@
+.workshop {
+  width: 33%;
+  @include e(time) {
+    font-size: rem(32px);
+  }
+  @include e(location) {
+    font-size: rem(16px);
+  }
+}

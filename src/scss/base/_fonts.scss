@@ -1,0 +1,17 @@
+$slickFonts: (
+  "slick.eot": "embedded-opentype",
+  "slick.woff": "woff",
+  "slick.ttf": "truetype",
+  "#slick": "svg",
+);
+
+@font-face {
+  font-family: "slick";
+  font-weight: normal;
+  font-style: normal;
+  src: url("#{$fontsPath}slick.eot");
+  src: url(".#{$fontsPath}slick.eot?#iefix") format("embedded-opentype"),
+    url("#{$fontsPath}slick.woff") format("woff"),
+    url("#{$fontsPath}slick.ttf") format("truetype"),
+    url("#{$fontsPath}#slick") format("svg");
+}

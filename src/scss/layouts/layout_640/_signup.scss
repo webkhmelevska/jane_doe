@@ -1,0 +1,77 @@
+.signup {
+  padding-block: 30px;
+  @include e(title) {
+    margin-top: 0;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    font-weight: 300;
+    font-size: rem(32px);
+    line-height: 36px;
+    color: cssvar(secondaryColor);
+    text-align: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  @include e(text) {
+    padding-top: 5px;
+    padding-bottom: 20px;
+    opacity: 0.8;
+    font-size: rem(24px);
+    text-align: center;
+
+    // font-weight: 900;
+    // background-clip: text;
+    // color: transparent;
+    // background-image: url(#{$i}bg-form.jpg);
+  }
+}
+
+.signup-box {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  gap: 20px;
+  @include e(input) {
+    width: 40%;
+    height: 38px;
+    padding: 8px 12px;
+    margin-bottom: 10px;
+    font-size: rem(14px);
+    line-height: 1.44;
+    color: cssvar(mainColor);
+    vertical-align: middle;
+    background-color: cssvar(white);
+    border: 1px solid cssvar(borderColor);
+  }
+  @include e(email) {
+    width: 40%;
+    height: 38px;
+    padding: 8px 12px;
+    margin-bottom: 10px;
+    font-size: rem(14px);
+    line-height: 1.44;
+    color: cssvar(mainColor);
+    vertical-align: middle;
+    background-color: cssvar(white);
+    border: 1px solid cssvar(borderColor);
+  }
+  @include e(btn) {
+    padding-inline: 6px;
+    margin-bottom: 10px;
+    height: 38px;
+    background-color: cssvar(secondaryColor);
+    font-weight: 700;
+    border-radius: 60px;
+    color: cssvar(white);
+    border: 0;
+    line-height: inherit;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+
+input.signup-box__btn {
+  width: 15%;
+}

@@ -1,0 +1,30 @@
+.features {
+  background-color: cssvar(bgLight);
+  font-weight: 400;
+  display: flex;
+  padding-block: 30px;
+  flex-wrap: wrap;
+}
+
+.feature-box {
+  position: relative;
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  @include e(link) {
+    display: block;
+    margin-top: 20px;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    color: cssvar(secondaryColor);
+    font-size: rem(22px);
+    text-decoration: none;
+  }
+
+  @include e(paragraph) {
+    padding-top: 5px;
+    padding-bottom: 15px;
+    font-size: rem(14px);
+  }
+}

@@ -1,0 +1,31 @@
+.footer {
+  margin-top: 30px;
+  padding: 50px;
+  background-color: cssvar(secondaryColor);
+  color: cssvar(white);
+  @include e(box) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.social {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  @include e(item) {
+  }
+  @include e(link) {
+    width: 40px;
+    height: 40px;
+    transition: background 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    &:hover {
+      background-color: cssvar(socialColor);
+    }
+  }
+}

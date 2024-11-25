@@ -1,0 +1,49 @@
+.slider-wrapper__title,
+.slider-wrapper__text,
+.workshops__title {
+  opacity: 0;
+  transform: translateX(-400px);
+}
+
+.slider-wrapper__title.element-show {
+  opacity: 1;
+  transition: all 1s;
+  transform: translateX(0%);
+}
+
+.slider-wrapper__text.element-show {
+  opacity: 1;
+  transition: all 1.4s;
+  transform: translateX(0%);
+}
+
+.workshops__title.element-show {
+  opacity: 1;
+  transition: all 1s;
+  transform: translateX(0%);
+}
+
+.workshop {
+  opacity: 0;
+}
+
+.workshop.element-show {
+  opacity: 1;
+  transition: all 1.4s;
+}
+
+.workshop.element-show:nth-child(2) {
+  transition-delay: 0.2s;
+}
+
+.workshop.element-show:nth-child(3) {
+  transition-delay: 0.4s;
+}
+
+.workshop.element-show:nth-child(4) {
+  transition-delay: 0.6s;
+}
+
+.workshop.element-show:nth-child(5) {
+  transition-delay: 0.8s;
+}

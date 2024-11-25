@@ -1,0 +1,56 @@
+.stories {
+  @include e(title) {
+    font-size: rem(32px);
+    line-height: 36px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+  @include e(list) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 30px;
+  }
+}
+
+.list-item {
+  position: relative;
+  margin-bottom: 30px;
+  padding: 40px 10px 10px;
+  @include e(img) {
+    position: absolute;
+    left: -10px;
+    top: 20px;
+    width: 100px;
+    height: 100px;
+    max-width: 100px;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.31);
+  }
+}
+
+.quotation {
+  position: relative;
+  margin-left: 100px;
+  @include e(mark) {
+    position: absolute;
+    left: -25px;
+    top: -10px;
+    display: inline-block;
+    margin-right: -44px;
+    color: cssvar(secondaryColor);
+    font-size: rem(56px);
+    font-weight: 700;
+  }
+  @include e(text) {
+    margin-top: 0;
+    margin-bottom: 10px;
+    opacity: 0.7;
+  }
+  @include e(author) {
+    margin-top: 15px;
+    color: cssvar(secondaryColor);
+    font-size: rem(12px);
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+}

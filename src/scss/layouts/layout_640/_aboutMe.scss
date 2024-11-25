@@ -1,0 +1,10 @@
+.about-me {
+  @include e(block) {
+    flex-wrap: nowrap;
+  }
+}
+
+.about-me-img {
+  padding-inline: 10px;
+  width: 100%;
+}

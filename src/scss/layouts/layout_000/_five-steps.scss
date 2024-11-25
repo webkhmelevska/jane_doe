@@ -1,0 +1,58 @@
+.five-steps {
+  padding-block: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include e(title) {
+    padding-inline: 10px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-weight: 300;
+    font-size: rem(24px);
+    color: cssvar(secondaryColor);
+    text-align: center;
+  }
+}
+
+.steps-box {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+  gap: 10px;
+  padding-inline: 10px;
+  justify-content: center;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-bottom: 30px;
+  @include e(title) {
+    padding-bottom: 10px;
+    padding-top: 20px;
+    margin-bottom: 10px;
+    border-style: none none solid;
+    border-width: 1px;
+    border-color: #000 #000 rgba(0, 0, 0, 0.1);
+    color: cssvar(secondaryColor);
+    font-size: rem(14px);
+  }
+
+  @include e(text) {
+    opacity: 0.7;
+  }
+}
+
+.steps-btn {
+  padding: 25px 35px;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  border: 2px solid cssvar(secondaryColor);
+  border-radius: 60px;
+  background-color: transparent;
+  color: cssvar(secondaryColor);
+  font-weight: 700;
+}
