@@ -2451,4 +2451,3 @@ let options = { threshold: [0.5] },
   observer = new IntersectionObserver(onEntry, options),
   elements = document.querySelectorAll(".el-animate");
 for (let e of elements) observer.observe(e);
-//8888
